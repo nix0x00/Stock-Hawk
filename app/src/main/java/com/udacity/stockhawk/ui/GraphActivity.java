@@ -87,7 +87,6 @@ public class GraphActivity extends AppCompatActivity {
     }
 
     private void get(String symbol) {
-        //String str = "https://query.yahooapis.com/v1/public/yql?q=select+*+from+yahoo.finance.quotes+where+symbol+in+(\"" + symbol + "\")&format=json&diagnostics=true&env=store://datatables.org/alltableswithkeys&callback=\n";
         String base = "https://query.yahooapis.com/v1/public/yql?q=";
 
         String url = "select * from yahoo.finance.historicaldata where symbol = '" + symbol + "' and startDate = '2016-01-01' and endDate = '2016-01-10'";
